@@ -89,10 +89,9 @@ class s3fit_batch_analysis:
             try:
                 self._run_fit_single(idat, icfg, outpath)
             except Exception as e: 
-                err_txt=e
-                print(err_txt)
-                with open(outerror, 'w') as f:
-                    f.write(f'Found the following Error:\n{e}')
+                print(e)
+                #with open(outerror, 'w') as f:
+                #    f.write(f'Found the following Error:\n{e}')
                     
                 
                 
