@@ -177,7 +177,7 @@ class s3fit_genconfig_batch:
 
         # start proc
         self.flist=glob.glob(os.path.join(self.input_dir,'*.pkl'))
-        self.flist.sort()
+        self.flist.sort(reverse=True)
 
 
     def generate_configs(self):
